@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { AppUserAuth } from './auth-user';
+import { AppUserAuth } from './app-user-auth';
 import { LOGIN_MOCKS } from './login-mocks';
 
 @Injectable({

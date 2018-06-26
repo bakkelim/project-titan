@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "titan"
+  "defaultProject": "titan",
+  "cli": {
+    "defaultCollection": "@ngrx/schematics"
+  }
 }
