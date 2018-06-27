@@ -8,7 +8,7 @@ import { EndComponent } from './end/end.component';
 const routes: Routes = [
   { path: 'start', component: StartComponent },
   { path: 'end', component: EndComponent },
-  { path: 'login', component: LoginComponent },
+  { path: 'login1', component: LoginComponent },
 ];
 @NgModule({
   imports: [
