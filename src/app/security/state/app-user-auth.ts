@@ -1,4 +1,4 @@
-export interface AppUserAuth {
+export interface AppAuthUser {
     userName: string;
     bearerToken: string;
     isAuthenticated: boolean;

@@ -13,9 +13,10 @@
           <input matInput placeholder="Password" [(ngModel)]="password" type="password" name="password" required>
         </mat-form-field>
       </form>
+      <mat-spinner [style.display]="isLoading ? 'block' : 'none'"></mat-spinner>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-raised-button (click)="login()" color="primary">Login</button>
+      <button [disabled]="isLoading" mat-raised-button (click)="login()" color="primary">Login</button>
     </mat-card-actions>
   </mat-card>
 </div>

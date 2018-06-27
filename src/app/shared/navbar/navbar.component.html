@@ -6,8 +6,10 @@
     <!-- <span class="example-spacer"></span> -->
 
     <!-- <button mat-button>About</button> -->
+    {{appAuthUser | json}}
     <button class="pull-right" routerLink="/start" mat-button>Start</button>
-    <button class="pull-right" routerLink="/end" mat-button>End</button>
-    <button class="pull-right" routerLink="/login1" mat-button>Login</button>
+    <button class="pull-right" *ngIf="appAuthUser.isAuthenticated" routerLink="/end" mat-button>End</button>
+    <button class="pull-right" *ngIf="!appAuthUser.isAuthenticated" routerLink="/login" mat-button>Login</button>
+    <button class="pull-right" *ngIf="appAuthUser.isAuthenticated" (click)="logout()" mat-button>Logout</button>
   </mat-toolbar-row>
 </mat-toolbar>

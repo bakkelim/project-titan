@@ -1,6 +1,6 @@
-import { AppUserAuth } from './app-user-auth';
+import { AppAuthUser } from '../state/app-user-auth';
 
-export const LOGIN_MOCKS: AppUserAuth[] = [
+export const LOGIN_MOCKS: AppAuthUser[] = [
   {
     userName: 'marius',
     bearerToken: 'abi393kdkd9393ikd',
