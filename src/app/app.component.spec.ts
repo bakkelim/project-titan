@@ -10,11 +10,28 @@ describe('AppComponent', () => {
   class MockLoginComponent {
   }
 
+  @Component({
+    selector: 'titan-navbar',
+    template: '<div></div>',
+  })
+  class MockNavbarComponent {
+  }
+
+  @Component({
+    // tslint:disable-next-line:component-selector
+    selector: 'router-outlet',
+    template: '<div></div>',
+  })
+  class MockRouterComponent {
+  }
+
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent,
         MockLoginComponent,
+        MockRouterComponent,
+        MockNavbarComponent,
       ],
     }).compileComponents();
   }));

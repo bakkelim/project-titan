@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { StartComponent } from './start.component';
+import { EndComponent } from './end.component';
 
-describe('StartComponent', () => {
-  let component: StartComponent;
-  let fixture: ComponentFixture<StartComponent>;
+describe('EndComponent', () => {
+  let component: EndComponent;
+  let fixture: ComponentFixture<EndComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ StartComponent ]
+      declarations: [ EndComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(StartComponent);
+    fixture = TestBed.createComponent(EndComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -23,8 +23,8 @@ describe('StartComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it(`should have a p tag with text 'start works!'`, async(() => {
+  it(`should have a p tag with text 'end works!'`, async(() => {
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('p').textContent).toContain('start works!');
+    expect(compiled.querySelector('p').textContent).toContain('end works!');
   }));
 });
