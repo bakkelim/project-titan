@@ -6,6 +6,7 @@ import { LoginPageComponent } from './security/container/login-page.component';
 
 
 const routes: Routes = [
+  { path: '', component: StartComponent },
   { path: 'start', component: StartComponent },
   { path: 'end', component: EndComponent },
   { path: 'login', component: LoginPageComponent },

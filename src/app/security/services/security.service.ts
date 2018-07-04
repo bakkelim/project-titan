@@ -18,7 +18,8 @@ export class SecurityService {
 
   login(userName: string, password: string): Observable<AppAuthUser> {
 
-    const url = 'https://localhost:5001/api/authentication';
+    // const url = 'https://localhost:5001/api/authentication';
+    const url = 'https://titanapi-dotnetcore.azurewebsites.net/api/authentication';
 
     const payload = {
       username: userName,

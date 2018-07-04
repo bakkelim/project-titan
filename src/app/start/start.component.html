@@ -1,3 +1,8 @@
-<p>
-  start works!
-</p>
+<!-- <img src="../../assets/titan.jpg"> -->
+
+<b>Titan</b> is the largest moon of Saturn. 
+<p *ngIf="!appAuthUser.isAuthenticated"><a routerLink="/login">Login</a> with <b>titan/Moon</b> to find out more</p>
+<p *ngIf="appAuthUser.isAuthenticated">
+  It is the only moon known to have a dense atmosphere, and the only object in space, other than Earth, where clear evidence of stable bodies of surface liquid has been found.
+  </p>
+
