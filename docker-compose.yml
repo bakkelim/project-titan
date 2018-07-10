@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  titan-angular:
+    image: titan-angular
+    build: .
+    environment:
+      NODE_ENV: production
+    ports:
+      - 4300:4300
