@@ -1,3 +1,3 @@
 # Titan-Angular
 
-Playing with Angular, Angular testing, Angular Material, NgRx and Docker
+Playing with Angular, Angular testing, Angular Material, NgRx and Docker.
